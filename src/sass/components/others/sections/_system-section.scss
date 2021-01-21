@@ -1,0 +1,58 @@
+// セクション・システム
+
+
+// 変数・ミックスイン
+@use "../../../bases" as b;
+
+
+.systemSection {
+  padding-top: 74px;
+  padding-bottom: 74px;
+
+  &__headingGroup {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  &__heading {
+    margin-top: 18px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+
+  &__subHeading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: b.$mainColor;
+  }
+
+  &__card:first-of-type {
+    margin-top: 66px;
+  }
+
+  &__card:not(:first-of-type) {
+    margin-top: 54px;
+  }
+
+
+  @include b.mq(md-min) {
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    &__heading {
+      font-size: 28px;
+    }
+
+    &__card:first-of-type {
+      margin-top: 72px;
+    }
+
+    &__card:not(:first-of-type) {
+      margin-top: 47px;
+    }
+  }
+}

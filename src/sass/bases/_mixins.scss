@@ -1,0 +1,17 @@
+// ミックスイン
+
+
+// 変数
+@use "_variables.scss";
+
+// マップ
+@use "sass:map";
+
+
+
+// ブレークポイント
+@mixin mq($breakpoint) {
+  @media #{map.get(variables.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}

@@ -1,0 +1,15 @@
+// 汎用クラス・ヘルパークラス・ユーティリティクラス・utilityクラス
+
+
+// 変数・ミックスイン
+@use "../bases" as b;
+
+
+// パソコンのみ
+.pc-only {
+  display: none;
+
+  @include b.mq(md-min) {
+    display: block;
+  }
+}

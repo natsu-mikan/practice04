@@ -1,0 +1,88 @@
+// カード・システム
+
+
+// 変数・ミックスイン
+@use "../../../bases" as b;
+
+
+.systemCard {
+  text-align: center;
+
+  &__image {
+    box-sizing: border-box;
+    width: 82px;
+    border: solid 8px b.$mainColor;
+    border-radius: 50%;
+  }
+
+  &__headingGroup {
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__heading {
+    margin-top: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  &__subHeading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: b.$lightGrayColor;
+  }
+
+  &__text {
+    margin-top: 20px;
+    text-align: start;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+
+  @include b.mq(md-min) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    &__figure {
+      flex: 0 0 307px;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__body {
+      margin-left: 40px;
+      margin-right: 12%;
+    }
+
+    &__headingGroup {
+      margin-top: 0;
+    }
+
+    &__heading {
+      margin-top: 18px;
+      font-size: 24px;
+    }
+
+    &__text {
+      margin-top: 46px;
+      font-size: 16px;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+
+      .systemCard__body {
+        margin-left: 12%;
+        margin-right: 40px;
+      }
+    }
+  }
+}

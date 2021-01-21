@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<%- include('components/common/_head.ejs', {pageTitle: 'トップページ'}) %>
+
+<body class="top">
+
+<%- include('components/common/_header.ejs') %>
+
+
+<%- include('components/_hero-header.ejs') %>
+
+
+<section class="top__topMessage messageSection messageSection--top">
+  <h2 class="messageSection__heading">ご自宅からオフィスまで</h2>
+
+  <p class="messageSection__text">NAGISAの施工・デザイン設計では、スペースを確保するアイデアからインテリアの選定、空間との調和、ネットワーク環境の準備、セキュリティの確保など、ワークスペースに求められるさまざまな要件をクリアしていきます。</p>
+</section>
+
+
+<section class="systemSection l-container">
+  <hgroup class="systemSection__headingGroup">
+    <h2 class="systemSection__heading">人気の設計システム</h2>
+
+    <h3 class="systemSection__subHeading">Popular System</h3>
+  </hgroup>
+
+  <div class="systemSection__card systemCard">
+    <figure class="systemCard__figure">
+      <img class="systemCard__image" src="images/idea.png" alt="">
+    </figure>
+
+    <div class="systemCard__body">
+      <hgroup class="systemCard__headingGroup">
+        <h3 class="systemCard__heading">環境に合わせたオリジナル設計</h3>
+
+        <h4 class="systemCard__subHeading">Original Design Environment</h4>
+      </hgroup>
+
+      <p class="systemCard__text">目的や環境に合わせて最適なワークスペースを作り出すべく、細かな打ち合わせを行い、オリジナルな環境を構築します。</p>
+    </div><!-- /.systemCard__body -->
+  </div><!-- /.systemSection__card.systemCard -->
+
+  <div class="systemSection__card systemCard systemCard--reverse">
+    <figure class="systemCard__figure">
+      <img class="systemCard__image" src="images/business.png" alt="">
+    </figure>
+
+    <div class="systemCard__body">
+      <hgroup class="systemCard__headingGroup">
+        <h3 class="systemCard__heading">業務の効率化と課題解決</h3>
+
+        <h4 class="systemCard__subHeading">Business Solutions</h4>
+      </hgroup>
+
+      <p class="systemCard__text">ワークスペースの大事なポイントである「仕事や業務の効率化」「課題解決」にも、デザイン設計の視点から取り組みます。</p>
+    </div><!-- /.systemCard__body -->
+  </div><!-- /.systemSection__card.systemCard -->
+
+  <div class="systemSection__card systemCard">
+    <figure class="systemCard__figure">
+      <img class="systemCard__image" src="images/secure.png" alt="">
+    </figure>
+
+    <div class="systemCard__body">
+      <hgroup class="systemCard__headingGroup">
+        <h3 class="systemCard__heading">高速でセキュアなネットワーク</h3>
+
+        <h4 class="systemCard__subHeading">Fast and Secure Network</h4>
+      </hgroup>
+
+      <p class="systemCard__text">現代のワークスペースには欠かすことができなくなったネットワーク環境も、高速でセキュアなトラフィックを確保して構築します。</p>
+    </div><!-- /.systemCard__body -->
+  </div><!-- /.systemSection__card.systemCard -->
+</section>
+
+
+<section class="messageSection">
+  <h2 class="messageSection__heading">設計やお見積りのご相談</h2>
+
+  <p class="messageSection__text">ワークスペースの施工・デザイン設計についてのお見積りやご相談については、いつでもお問い合わせください。企業フィロソフィに応じて、インスタンス単位での発注・請負も可能です。</p>
+
+  <a class="messageSection__link primaryBtn" href="#">詳しくはこちら</a>
+</section>
+
+
+<%- include('components/common/_footer') %>
+
+
+<%- include('components/common/_script') %>
+
+</body>
+
+</html>

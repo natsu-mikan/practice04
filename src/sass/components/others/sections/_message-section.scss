@@ -1,0 +1,74 @@
+// セクション・メッセージ
+
+
+// 変数・ミックスイン
+@use "../../../bases" as b;
+
+
+.messageSection {
+  padding: 92px 20px;
+  text-align: center;
+  background-image: url(../images/wall.jpg);
+  background-position: center;
+  background-size: cover;
+
+  &--top {
+    box-sizing: border-box;
+    max-width: 1088px;
+    padding: 110px 20px;
+    margin: 0 auto;
+    background-image: url(../images/plan.jpg);
+  }
+
+  &__heading {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.5;
+    color: b.$whiteColor;
+  }
+
+  &__text {
+    max-width: 32.2em;
+    margin: 18px auto 0;
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.8;
+    color: b.$whiteColor;
+  }
+
+  &__link {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  @include b.mq(md-min) {
+    &__heading {
+      font-size: 36px;
+    }
+
+    &__text  {
+      font-size: 16px;
+    }
+
+    &__link {
+      margin-top: 60px;
+    }
+
+
+    // トップページの１つ目のメッセージ
+    &--top {
+      padding-right: 56px;
+
+      .messageSection__heading {
+        width: 515px;
+        margin-left: auto;
+        text-align: start;
+      }
+
+      .messageSection__text {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// ヘッダー
+
+// 変数・ミックスイン
+@use "../../bases" as b;
+
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 18px;
+
+  &__siteName {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__gNav {
+    margin-top: 20px;
+  }
+
+
+  @include b.mq(md-min) {
+    padding-top: 43px;
+    padding-bottom: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__gNav {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// ボタン・プライマリ
+
+
+// 変数・ミックスイン
+@use "../../../bases" as b;
+
+
+.primaryBtn {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 4px;
+  background-color: b.$accentColor;
+  color: b.$whiteColor;
+
+  &:hover {
+    background-color: b.$darkAccentColor;
+  }
+
+
+  @include b.mq(md-min) {
+    padding: 10px 75px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,83 @@
+// フッター
+
+
+// 変数・ミックスイン
+@use "../../bases" as b;
+
+
+.footer {
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  &__siteName {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__address {
+    margin-top: 13px;
+    font-size: 12px;
+    line-height: 1.5;
+    font-style: normal;
+  }
+
+  &__inner02 {
+    margin-top: 35px;
+  }
+
+  &__navList {
+    display: flex;
+  }
+
+  &__navItem {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__navLink {
+    font-size: 11px;
+
+    &:hover {
+      color: b.$darkAccentColor;
+    }
+  }
+
+  &__copyright {
+    margin-top: 11px;
+    font-size: 11px;
+
+    &SiteName {
+      text-transform: uppercase;
+    }
+  }
+
+
+  @include b.mq(md-min) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__inner02 {
+      margin-top: 0;
+    }
+
+    &__navItem {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+
+    &__navLink {
+      font-size: 12px;
+    }
+
+    &__copyright {
+      margin-top: 19px;
+      text-align: right;
+      font-size: 12px;
+    }
+  }
+}

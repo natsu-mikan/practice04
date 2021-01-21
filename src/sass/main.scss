@@ -1,0 +1,24 @@
+// ベース
+@use "bases/_bases.scss";
+
+// 汎用クラス
+@use "utilities/utilities";
+
+// レイアウト
+@use "layouts/layouts";
+
+// コンポーネント・パーツ
+@forward "components/parts/btns";
+
+// コンポーネント・共通
+@use "components/common";
+
+// コンポーネント・その他
+@use "components/others/articles";
+@use "components/others/cards";
+@use "components/others/heroes/hero";
+@use "components/others/hero-headers/hero-header";
+@use "components/others/sections";
+
+// ページ・トップページ
+@use "pages";
